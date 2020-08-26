@@ -1,0 +1,425 @@
+/* font */
+/* font-family: 'Audiowide', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Red Rose', cursive; */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ebecf1;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: "Audiowide", cursive;
+}
+p,
+a {
+  font-family: "Poppins", sans-serif;
+}
+
+.hline {
+  border: 10px #1b1c25 dotted;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  width: 10vw;
+  margin: 50px auto;
+}
+
+/* NAVIGATION BAR */
+
+nav {
+  display: flex;
+  background-color: #1b1c25;
+  z-index: 999;
+  height: 9vh;
+  width: 100%;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  margin-bottom: 30px;
+}
+nav * {
+  margin: 10px;
+}
+#logo {
+  height: 150px;
+  width: 100px;
+}
+.elements {
+  margin-top: 10px;
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+nav a {
+  float: left;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#redir {
+  display: none;
+  position: absolute;
+  height: 50vh;
+  width: 15vw;
+  background-color: black;
+  opacity: 70%;
+  right: 2px;
+  top: 9vh;
+  margin-top: -10px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-right: 0;
+}
+.redirlink {
+  position: relative;
+  min-width: 15vw;
+  max-width: 15vw;
+  text-align: left;
+  margin-top: 0;
+}
+.redirlink:hover {
+  transform: scale(1.2);
+  text-align: center;
+}
+
+#menu {
+  height: 15px;
+  width: 20px;
+  margin: 0 1.5vw;
+  padding: 0;
+}
+
+/* Body */
+
+.body {
+  height: 90vh;
+}
+
+.body-content {
+  display: flex;
+  padding: 10px;
+  height: 41vw;
+  animation: body .4s linear;
+}
+@keyframes body{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+#slides {
+  height: 40vw;
+  width: 37vw;
+  position: relative;
+  margin-right: 10px;
+}
+
+.car {
+  transition: 2s;
+  position: relative;
+  height: 40vw;
+  width: 37vw;
+  z-index: -1;
+}
+
+.incdec {
+  cursor: pointer;
+  position: absolute;
+  opacity: 0.5;
+  padding: 10px;
+  height: 40vw;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  border: none;
+  outline: none;
+}
+#inc {
+  left: 0;
+  bottom: 0;
+}
+
+#dec {
+  right: 0;
+  bottom: 0;
+}
+/* #inc:hover,
+#dec:hover {
+  opacity: 0.5;
+} */
+.discription {
+  font-size: 2vw;
+  margin: auto 10px;
+  text-align: center;
+}
+#head {
+  font-size: 3.5vw;
+  margin: 20px;
+  text-decoration: underline;
+}
+
+/* Page 2 */
+
+.page2 {
+  text-align: center;
+  height: 135vh;
+}
+
+#best {
+  font-size: 3.5vw;
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+
+
+
+.list-page {
+  width: 66vw;
+  position: relative;
+  margin: auto;
+}
+.list-item {
+  transform: scale(1);
+  transition: transform 2s;
+  font-family: "Poppins", sans-serif;
+  /* background-color: #1f4068; */
+  background-image: linear-gradient(45deg, #206a5d, #1f4068);
+  width: 66vw;
+  height: 20vh;
+  margin: 20px 0px;
+  border: 2px black solid;
+  display: flex;
+  justify-content: space-around;
+  /* box-shadow: 4px 4px grey; */
+}
+.list-item:hover{
+  transform: scale(1.04);
+  box-shadow: 0 0 10px 2px #000000;
+}
+.best-car {
+  width: 15vw;
+  height: 15vh;
+  margin: 14px;
+  border: 2px black solid;
+}
+
+.t-area {
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+.text {
+  margin-top: 20px;
+  font-size: 1.5vw;
+}
+
+.rating {
+  font-size: 1.3vw;
+}
+
+#l2 {
+  display: none;
+}
+
+#btn {
+  margin: 5px auto;
+}
+
+.pgchng {
+  outline: none;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 1.5vw;
+  color: #fff;
+  margin: 4px 100px;
+  border: 2px black solid;
+  background-color: #1b1c25;
+}
+.pgchng:hover{
+  transform: scale(0.7);
+}
+/* page 3 */
+
+.page3 {
+  width: 100%;
+  height: 168vh;
+}
+
+/* UPCOMING */
+
+.upcoming {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.upimg {
+  width: 20vw;
+  height: 12vw;
+}
+
+.uptxt {
+  height: 7vw;
+  text-align: center;
+  padding-top: 30px;
+  margin: 0;
+  border-top: 2px solid black;
+}
+
+.uptxt h3 {
+  font-size: 1.4vw;
+}
+
+.uptxt p {
+  font-size: 1.1vw;
+}
+
+.up1,
+.up2,
+.up3 {
+  border: 4px solid black;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 3px 3px grey;
+}
+
+#up-text {
+  font-size: 3.5vw;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 35px;
+  text-decoration: underline;
+}
+
+.up-car {
+  height: 46vh;
+  border: 2px solid black;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* Review */
+
+#revhead {
+  font-size: 3.5vw;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 35px;
+  text-decoration: underline;
+  margin-top: 50px;
+}
+.outdiv {
+  width: 23vw;
+  height: 26vw;
+  border: 2px black solid;
+  margin: 20px;
+  padding: 15px;
+  background-image: linear-gradient(#206a5d, #1f4068);
+  margin-bottom: 50px;
+  box-shadow: 0px 0px 20px 1px;
+}
+.inrdiv {
+  width: 21vw;
+  height: 24vw;
+  border: 2px black solid;
+  background-color: white;
+  border-radius: 30px;
+  padding: 1vw;
+  overflow-y: auto;
+}
+.review {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.nmimg {
+  display: flex;
+  justify-content: space-evenly;
+}
+.name {
+  margin: 20px 0;
+}
+.rrate {
+  text-align: center;
+  color: white;
+  background-color: green;
+  width: 3.5vw;
+}
+.rtext {
+  margin: auto 10px;
+  font-size: 1.2vw;
+}
+.by {
+  font-size: 0.9vw;
+}
+.rimg {
+  width: 7vw;
+  height: 10vh;
+  margin-top: 6px;
+}
+/* navbar */
+.navbar{
+  
+  position: fixed;
+  transition: position 3s;
+}
+
+nav{
+  animation: nav 1s linear;
+}
+@keyframes nav{
+  from{
+    transform: translate(0,-100px);
+  }
+  to{
+    transform: translate(0,0);
+  }
+}
+
+
+/* FOOTER */
+.footer {
+  background-color: #1b1c25;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.fotlink {
+  color: white;
+ 
+}
+
+.fotln {
+  margin-top: 6vh;
+
+  /* list-style-type: none; */
+  letter-spacing: 2px;
+  color: white;
+
+}
+
+.fotln a {
+  text-decoration: none;
+}
+
+.fotln li {
+  margin-bottom: 5px;
+}
